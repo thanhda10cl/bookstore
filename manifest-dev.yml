@@ -1,0 +1,7 @@
+---
+applications:
+  - name: metisBook
+    path: ./target/MetisBook-0.0.1-SNAPSHOT.jar
+    memory: 4G
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 17.+ } }'
