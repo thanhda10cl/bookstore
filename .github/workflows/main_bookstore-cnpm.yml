@@ -18,7 +18,7 @@ jobs:
           rm cf.deb
 
       - name: Log in to Cloud Foundry
-        run: cf login  -a ${{ secrets.CF_API }} -u ${{ secrets.CF_USERNAME }} -p ${{ secrets.CF_PASSWORD }}
+        run: cf login  -a 'https://api.cf.ap21.hana.ondemand.com/' -u 'nguyenda.gpt@gmail.com' -p '123123Qq.'
 
       - name: Deploy to Cloud Foundry
         uses: jhunt/cf-push@v1
