@@ -13,7 +13,7 @@ jobs:
 
       - name: Install cf CLI
         run: |
-          wget -q -O cf.deb https://cli.run.pivotal.io/stable?release=debian64&source=github
+          wget -q -O cf.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
           sudo dpkg -i cf.deb
           rm cf.deb
 
