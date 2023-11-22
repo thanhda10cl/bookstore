@@ -11,6 +11,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Install cf CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cf-cli
+
       - name: Log in to Cloud Foundry
         run: cf login --sso -a ${{ secrets.CF_API }} -u ${{ secrets.CF_USERNAME }} -p ${{ secrets.CF_PASSWORD }}
 
@@ -18,3 +23,4 @@ jobs:
         uses: jhunt/cf-push@v1
         with:
           validate: false
+
