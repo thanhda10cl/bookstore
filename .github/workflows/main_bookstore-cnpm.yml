@@ -18,7 +18,7 @@ jobs:
           rm cf.deb
 
       - name: Log in to Cloud Foundry
-        run: cf login --sso -a ${{ secrets.CF_API }} -u ${{ secrets.CF_USERNAME }} -p ${{ secrets.CF_PASSWORD }}
+        run: cf login  -a ${{ secrets.CF_API }} -u ${{ secrets.CF_USERNAME }} -p ${{ secrets.CF_PASSWORD }}
 
       - name: Deploy to Cloud Foundry
         uses: jhunt/cf-push@v1
