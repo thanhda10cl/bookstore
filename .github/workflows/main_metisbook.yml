@@ -3,7 +3,6 @@
 
 name: Build and deploy WAR app to Azure Web App - metisbook
 
-name: TodoTask-01
 on: push
 env:
   ASC_PACKAGE_PATH: ${{ github.workspace }}
