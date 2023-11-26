@@ -37,5 +37,5 @@ jobs:
         with:
           app-name: 'metisbook'
           slot-name: 'Production'
-          package: '*.jar'
+          package: ${{ env.ASC_PACKAGE_PATH }}/**/*.jar
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8F4F66D5FAEA47E2B0C2A6AFE459227F }}
